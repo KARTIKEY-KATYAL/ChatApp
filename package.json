@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd api && npm start",
+    "client": "cd client && npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "vite": "^5.3.3"
+  }
+}
