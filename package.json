@@ -1,16 +1,13 @@
 {
-  "name": "root",
+  "name": "chatapp-root",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd api && npm start",
     "client": "cd client && npm run dev"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2"
-  },
-  "dependencies": {
-    "vite": "^5.3.3"
+    "concurrently": "^8.0.1"
   }
 }
